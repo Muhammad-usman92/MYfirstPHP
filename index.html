@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration form</h1>
+    <form action="process-form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" />
+        <label>Massage: </label>
+        <textarea id="message" name="message"></textarea>
+
+        <label>Priority:</label>
+        <select id="priority" name="priority">
+        <option value="COM[PU">low</option>
+        <option value="normal" selected>Medium</option>
+        <option value="">High</option>
+      </select>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label>
+          <input type="radio" name="type" value="Male" />
+          Male
+        </label>
+            <br />
+            <label>
+          <input type="radio" name="type" value="Female" />
+          Female
+        </label>
+        </fieldset>
+
+        <lable>
+            <input type="checkbox" name="term" /> I Agree the term and conditons
+        </lable>
+        <br />
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
